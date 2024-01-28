@@ -1,0 +1,10 @@
+{
+  "en": {
+    "name": "Amazing OpenAI API",
+    "description": "Convert different model APIs into the OpenAI API format out of the box."
+  },
+  "cn": {
+    "name": "Amazing OpenAI API",
+    "description": "10MB+ 的小工具，能够将不同的模型 API 转换为开箱即用的 OpenAI API 格式。"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "en": {
+    "name": "Go Baidu Speech",
+    "description": "API Service of Baidu ASR/TTS."
+  },
+  "cn": {
+    "name": "Go Baidu Speech",
+    "description": "百度语音（TTS/ASR）相关的本地 API 封装，支持 Docker 一键启动。"
+  }
+}

@@ -31,6 +31,17 @@ type Project struct {
 	} `json:"license"`
 }
 
+type Shim struct {
+	En struct {
+		Name        string `json:"name"`
+		Description string `json:"description"`
+	} `json:"en"`
+	Cn struct {
+		Name        string `json:"name"`
+		Description string `json:"description"`
+	} `json:"cn"`
+}
+
 const CACHE_DIR = "cache"
 
 func main() {
@@ -55,6 +66,8 @@ func makeTemplate(projects []Project) {
 
 	var template = ""
 	for _, project := range projects {
+		shim := getProjectShim(project)
+
 		template += `
 		<figure class="project">
 			<div class="preview">
@@ -65,8 +78,8 @@ func makeTemplate(projects []Project) {
 				<span class="create">创建:` + project.CreatedAt.Format("2006年1月2日") + `</span>
 			</div>
 			<figcaption>
-				<h2>` + project.Name + `</h2>
-				<p>` + project.Description + `</p>
+				<h2>` + shim.Cn.Name + `</h2>
+				<p>` + shim.Cn.Description + `</p>
 				<a href="` + project.URL + `" target="_blank" rel="noreferrer nofollow">GitHub</a>
 				<a href="` + project.Homepage + `" target="_blank">Read More</a>
 			</figcaption>
@@ -108,6 +121,38 @@ func mergeProjectData() (allProjects []Project) {
 		}
 	}
 	return allProjects
+}
+
+func getProjectShim(project Project) (shim Shim) {
+	filepath := strings.ToLower(fmt.Sprintf("config/%s.json", project.Name))
+	_, err := os.Stat(filepath)
+	if err != nil {
+		shim.Cn.Name = project.Name
+		shim.Cn.Description = project.Description
+		shim.En.Name = project.Name
+		shim.En.Description = project.Description
+		return shim
+	}
+
+	buf, err := os.ReadFile(strings.ToLower(fmt.Sprintf("config/%s.json", project.Name)))
+	if err != nil {
+		panic(err)
+	}
+	json.Unmarshal(buf, &shim)
+
+	if shim.Cn.Name == "" {
+		shim.Cn.Name = project.Name
+	}
+	if shim.Cn.Description == "" {
+		shim.Cn.Description = project.Description
+	}
+	if shim.En.Name == "" {
+		shim.En.Name = project.Name
+	}
+	if shim.En.Description == "" {
+		shim.En.Description = project.Description
+	}
+	return shim
 }
 
 func getForks() (forks []string) {
