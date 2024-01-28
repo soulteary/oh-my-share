@@ -1,22 +1,29 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io"
 	"net/http"
 	"os"
+	"sort"
+	"strings"
 	"time"
 )
 
 type Project struct {
-	Name      string    `json:"name"`
-	FullName  string    `json:"full_name"`
-	Private   bool      `json:"private"`
-	CreatedAt time.Time `json:"created_at"`
-	UpdatedAt time.Time `json:"updated_at"`
-	PushedAt  time.Time `json:"pushed_at"`
-	License   struct {
+	Name        string    `json:"name"`
+	FullName    string    `json:"full_name"`
+	Description string    `json:"description"`
+	URL         string    `json:"html_url"`
+	Homepage    string    `json:"homepage"`
+	Private     bool      `json:"private"`
+	Fork        bool      `json:"fork"`
+	CreatedAt   time.Time `json:"created_at"`
+	UpdatedAt   time.Time `json:"updated_at"`
+	PushedAt    time.Time `json:"pushed_at"`
+	License     struct {
 		Key  string `json:"key"`
 		Name string `json:"name"`
 		URL  string `json:"url"`
@@ -32,6 +39,44 @@ func main() {
 	fetchWithCache(token, maxPage)
 	projects := mergeProjectData()
 	fmt.Println(len(projects))
+	makeTemplate(projects)
+}
+
+func makeTemplate(projects []Project) {
+	baseTemplate, err := os.ReadFile("template/index.html")
+	if err != nil {
+		panic(err)
+	}
+
+	sort.Slice(projects, func(i, j int) bool {
+		return projects[j].PushedAt.Before(projects[i].PushedAt)
+	})
+
+	var template = ""
+	for _, project := range projects {
+		template += `
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/` + strings.ToLower(project.FullName) + `" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:` + project.PushedAt.Format("2006年1月2日") + `</span>
+				<span class="create">创建:` + project.CreatedAt.Format("2006年1月2日") + `</span>
+			</div>
+			<figcaption>
+				<h2>` + project.Name + `</h2>
+				<p>` + project.Description + `</p>
+				<a href="` + project.URL + `" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="` + project.Homepage + `" target="_blank">Read More</a>
+			</figcaption>
+		</figure>`
+	}
+
+	baseTemplate = bytes.Replace(baseTemplate, []byte("<!-- project list here -->"), []byte(template), 1)
+	baseTemplate = bytes.ReplaceAll(baseTemplate, []byte(`<a href="" target="_blank">Read More</a>`), []byte(""))
+
+	os.MkdirAll("public", os.ModePerm)
+	os.WriteFile("public/index.html", baseTemplate, os.ModePerm)
 }
 
 func mergeProjectData() (allProjects []Project) {
@@ -49,7 +94,9 @@ func mergeProjectData() (allProjects []Project) {
 
 		for pId := range projects {
 			if !projects[pId].Private {
-				allProjects = append(allProjects, projects[pId])
+				if !projects[pId].Fork {
+					allProjects = append(allProjects, projects[pId])
+				}
 			}
 		}
 	}

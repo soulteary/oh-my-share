@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        background-color: #212121;
+        margin: 0;
+        height: 100%;
+      }
+      h1 {
+        text-align: center;
+        color: #fff;
+      }
+      #project-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        margin: 0;
+        height: 100%;
+      }
+      .project {
+        font-family: Arial, sans-serif;
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 230px;
+        max-width: 315px;
+        width: 100%;
+        color: #ffffff;
+        text-align: left;
+        line-height: 1.4em;
+        background-color: #141414;
+        border: 1px solid #141414;
+      }
+      .project * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+      }
+      .project .preview {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 315px;
+        height: 176px;
+      }
+      .project img {
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+        opacity: 0.85;
+        padding-top: 30px;
+      }
+      .project .date {
+        position: absolute;
+        background-color: #141414;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 10px 10px 4px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        overflow: hidden;
+      }
+      .project .date .update {
+        float: left;
+      }
+      .project .date .create {
+        float: right;
+      }
+      .project figcaption {
+        width: 100%;
+        background-color: #141414;
+        padding: 25px;
+        position: relative;
+      }
+      .project figcaption a {
+        padding: 5px;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 10px 0;
+        display: inline-block;
+        opacity: 0.65;
+        width: 47%;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .project figcaption a:hover {
+        opacity: 1;
+      }
+      .project h2 {
+        margin: 0 0 10px;
+        font-weight: 300;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        overflow: hidden;
+        height: 60px;
+      }
+      .project p {
+        margin: 0 0 10px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        opacity: 0.8;
+        height: 90px;
+        overflow: hidden;
+      }
+      .project:hover {
+        border: 1px dashed #a1a1a1;
+      }
+      .project:hover img {
+        opacity: 1;
+      }
+      .project:hover figcaption,
+      .project:hover .date {
+        background-color: #000;
+      }
+      .project figcaption a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Project</h1>
+    </div>
+    <div id="project-container">
+      <!-- project list here -->
+    </div>
+  </body>
+</html>
