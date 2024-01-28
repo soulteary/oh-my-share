@@ -101,12 +101,6 @@ func mergeProjectData() (allProjects []Project) {
 		}
 	}
 
-	buf, err := json.Marshal(allProjects)
-	if err != nil {
-		panic(err)
-	}
-	os.WriteFile("projects.json", buf, os.ModePerm)
-
 	return allProjects
 }
 

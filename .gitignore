@@ -1,3 +1,3 @@
-*.json
+cache
 public
 .DS_Store
