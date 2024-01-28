@@ -74,8 +74,8 @@ func makeTemplate(projects []Project) {
 				<img src="projects/` + strings.ToLower(project.FullName) + `" alt="" onerror="this.src='placeholder.jpg'" />
 			</div>
 			<div class="date">
-				<span class="update">更新:` + project.PushedAt.Format("2006年1月2日") + `</span>
-				<span class="create">创建:` + project.CreatedAt.Format("2006年1月2日") + `</span>
+				<span class="update" data-lang-en="Update:` + project.PushedAt.Format("2006/1/2") + `">更新:` + project.PushedAt.Format("2006年1月2日") + `</span>
+				<span class="create" data-lang-en="Create:` + project.CreatedAt.Format("2006/1/2") + `">创建:` + project.CreatedAt.Format("2006年1月2日") + `</span>
 			</div>
 			<figcaption>
 				<h2 data-lang-en="` + shim.En.Name + `">` + shim.Cn.Name + `</h2>
