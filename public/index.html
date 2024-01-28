@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        background-color: #212121;
+        margin: 0;
+        height: 100%;
+      }
+      h1 {
+        text-align: center;
+        color: #fff;
+      }
+      #project-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        margin: 0;
+        height: 100%;
+      }
+      .project {
+        font-family: Arial, sans-serif;
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 230px;
+        max-width: 315px;
+        width: 100%;
+        color: #ffffff;
+        text-align: left;
+        line-height: 1.4em;
+        background-color: #141414;
+        border: 1px solid #141414;
+      }
+      .project * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+      }
+      .project .preview {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 315px;
+        height: 176px;
+      }
+      .project img {
+        height: 100%;
+        width: 100%;
+        vertical-align: top;
+        opacity: 0.85;
+        padding-top: 30px;
+      }
+      .project .date {
+        position: absolute;
+        background-color: #141414;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 10px 10px 4px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: uppercase;
+        overflow: hidden;
+      }
+      .project .date .update {
+        float: left;
+      }
+      .project .date .create {
+        float: right;
+      }
+      .project figcaption {
+        width: 100%;
+        background-color: #141414;
+        padding: 25px;
+        position: relative;
+      }
+      .project figcaption a {
+        padding: 5px;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 10px 0;
+        display: inline-block;
+        opacity: 0.65;
+        width: 47%;
+        text-align: center;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      .project figcaption a:hover {
+        opacity: 1;
+      }
+      .project h2 {
+        margin: 0 0 10px;
+        font-weight: 300;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        overflow: hidden;
+        height: 60px;
+      }
+      .project p {
+        margin: 0 0 10px;
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        opacity: 0.8;
+        height: 90px;
+        overflow: hidden;
+      }
+      .project:hover {
+        border: 1px dashed #a1a1a1;
+      }
+      .project:hover img {
+        opacity: 1;
+      }
+      .project:hover figcaption,
+      .project:hover .date {
+        background-color: #000;
+      }
+      .project figcaption a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Project</h1>
+    </div>
+    <div id="project-container">
+      
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/amazing-openai-api" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月27日</span>
+				<span class="create">创建:2023年12月22日</span>
+			</div>
+			<figcaption>
+				<h2>amazing-openai-api</h2>
+				<p>Convert different model APIs into the OpenAI API format out of the box.</p>
+				<a href="https://github.com/soulteary/amazing-openai-api" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2024/01/09/amazing-openai-api-call-all-non-openai-models-according-to-the-openai-api.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/go-baidu-speech" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月27日</span>
+				<span class="create">创建:2024年1月27日</span>
+			</div>
+			<figcaption>
+				<h2>go-baidu-speech</h2>
+				<p>API Service of Baidu ASR/TTS.</p>
+				<a href="https://github.com/soulteary/go-baidu-speech" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/sparrow" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月22日</span>
+				<span class="create">创建:2023年5月7日</span>
+			</div>
+			<figcaption>
+				<h2>sparrow</h2>
+				<p>ChatGPT Style client-compatible Backend Server, open source implementation.</p>
+				<a href="https://github.com/soulteary/sparrow" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/05/19/make-openai-more-open-and-freely-access-data-sources-in-chatgpt.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/rss-can" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月22日</span>
+				<span class="create">创建:2023年3月23日</span>
+			</div>
+			<figcaption>
+				<h2>rss-can</h2>
+				<p>🚀 Harness the power of AI, Got RSS CAN be better and simple.</p>
+				<a href="https://github.com/soulteary/rss-can" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/tags/rss-can.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-stable-diffusion-webui" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月18日</span>
+				<span class="create">创建:2024年1月16日</span>
+			</div>
+			<figcaption>
+				<h2>docker-stable-diffusion-webui</h2>
+				<p>Docker, Stable, Maintainable WebUI.</p>
+				<a href="https://github.com/soulteary/docker-stable-diffusion-webui" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/certs-maker" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月18日</span>
+				<span class="create">创建:2021年2月3日</span>
+			</div>
+			<figcaption>
+				<h2>certs-maker</h2>
+				<p>Tiny self-signed tool, file size between 1.5MB(binary) and 4MB (docker). Generate a self-hosted / dev certificate through configuration.</p>
+				<a href="https://github.com/soulteary/certs-maker" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/10/22/make-docker-tools-image-with-only-3md-self-signed-certificate-certs-maker.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/ubuntu-remote-control-helper" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月17日</span>
+				<span class="create">创建:2023年4月9日</span>
+			</div>
+			<figcaption>
+				<h2>ubuntu-remote-control-helper</h2>
+				<p>Make Ubuntu Native Remote Control Easy to use and Reliable.</p>
+				<a href="https://github.com/soulteary/ubuntu-remote-control-helper" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/04/11/make-ubuntu-native-remote-control-reliable-with-urch.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/stable-diffusion-webui" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月17日</span>
+				<span class="create">创建:2024年1月17日</span>
+			</div>
+			<figcaption>
+				<h2>stable-diffusion-webui</h2>
+				<p>More Stable, Dockerize, Stable Diffusion Web UI</p>
+				<a href="https://github.com/soulteary/stable-diffusion-webui" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-quick-docs" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月14日</span>
+				<span class="create">创建:2024年1月4日</span>
+			</div>
+			<figcaption>
+				<h2>docker-quick-docs</h2>
+				<p>本地部署、能够快速访问的文档工具，用来改善 GitHub Pages 文档访问体验。</p>
+				<a href="https://github.com/soulteary/docker-quick-docs" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2024/01/04/improving-the-github-pages-reading-experience-quick-docs.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/flare" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月12日</span>
+				<span class="create">创建:2022年2月18日</span>
+			</div>
+			<figcaption>
+				<h2>flare</h2>
+				<p>🏂 Challenge all bookmarking apps and websites directories, Aim to Be a best performance monster.</p>
+				<a href="https://github.com/soulteary/flare" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/02/23/building-a-personal-bookmark-navigation-app-from-scratch-flare.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-stable-video-diffusion" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月12日</span>
+				<span class="create">创建:2024年1月8日</span>
+			</div>
+			<figcaption>
+				<h2>docker-stable-video-diffusion</h2>
+				<p>Help Elon Musk Launch a Rocket 🚀</p>
+				<a href="https://github.com/soulteary/docker-stable-video-diffusion" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2024/01/08/stable-video-diffusion-quick-start-with-docker-and-diffusers.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-sdxl" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月12日</span>
+				<span class="create">创建:2023年7月28日</span>
+			</div>
+			<figcaption>
+				<h2>docker-sdxl</h2>
+				<p>简单、靠谱的 SDXL Docker 使用方案。</p>
+				<a href="https://github.com/soulteary/docker-sdxl" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/07/29/get-started-with-stability-ai-sdxl-1-0-release-using-docker.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-stable-diffusion-xl-turbo" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月12日</span>
+				<span class="create">创建:2024年1月12日</span>
+			</div>
+			<figcaption>
+				<h2>docker-stable-diffusion-xl-turbo</h2>
+				<p>Stable Diffusion XL Turbo 实时文生图、图生图</p>
+				<a href="https://github.com/soulteary/docker-stable-diffusion-xl-turbo" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2024/01/13/stable-diffusion-xl-turbo-image-generation.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/opencv-fixer" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月7日</span>
+				<span class="create">创建:2024年1月7日</span>
+			</div>
+			<figcaption>
+				<h2>opencv-fixer</h2>
+				<p>Fix OpenCV Issue for numpy, diffusers, etc.</p>
+				<a href="https://github.com/soulteary/opencv-fixer" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2024/01/07/fix-opencv-dependency-errors-opencv-fixer.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-flare" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月6日</span>
+				<span class="create">创建:2022年1月19日</span>
+			</div>
+			<figcaption>
+				<h2>docker-flare</h2>
+				<p>Flare ✨ Lightweight, high performance and fast self-hosted navigation pages, resource utilization rate is <1% CPU, MEM <30 M, Docker Image < 10M</p>
+				<a href="https://github.com/soulteary/docker-flare" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/02/23/building-a-personal-bookmark-navigation-app-from-scratch-flare.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/you-dont-need-build-javascript" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月4日</span>
+				<span class="create">创建:2023年12月4日</span>
+			</div>
+			<figcaption>
+				<h2>You-Dont-Need-Build-JavaScript</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/You-Dont-Need-Build-JavaScript" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2024/01/04/your-website-may-not-need-front-end-builds-chapter-2.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/gin-static" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月3日</span>
+				<span class="create">创建:2024年1月2日</span>
+			</div>
+			<figcaption>
+				<h2>gin-static</h2>
+				<p>100% coverage, embed support. Gin Static middleware</p>
+				<a href="https://github.com/soulteary/gin-static" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2024/01/03/golang-gin-static-middleware-improves.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/webhook" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2024年1月2日</span>
+				<span class="create">创建:2022年1月1日</span>
+			</div>
+			<figcaption>
+				<h2>webhook</h2>
+				<p>webhook is a lightweight incoming webhook server to run shell commands</p>
+				<a href="https://github.com/soulteary/webhook" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/ai-token-calculator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年12月28日</span>
+				<span class="create">创建:2023年12月28日</span>
+			</div>
+			<figcaption>
+				<h2>ai-token-calculator</h2>
+				<p>一个可以验证和计算文本消耗 Token 的小工具，支持在浏览器中使用，汉化自 OpenAI Tokenizer。</p>
+				<a href="https://github.com/soulteary/ai-token-calculator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/favicon-generator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年12月8日</span>
+				<span class="create">创建:2023年12月7日</span>
+			</div>
+			<figcaption>
+				<h2>favicon-generator</h2>
+				<p>Favicon.ico & App Icon Generator. / 网站图标，应用图标生成器。</p>
+				<a href="https://github.com/soulteary/favicon-generator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-cronicle" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年11月27日</span>
+				<span class="create">创建:2021年12月5日</span>
+			</div>
+			<figcaption>
+				<h2>docker-cronicle</h2>
+				<p>Simple, lightweight, beautiful webui Cronjob / Scheduled task docker solution.</p>
+				<a href="https://github.com/soulteary/docker-cronicle" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/11/17/use-docker-and-traefik-to-build-a-lightweight-and-beautiful-scheduled-task-tool.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-yi-runtime" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年11月26日</span>
+				<span class="create">创建:2023年11月26日</span>
+			</div>
+			<figcaption>
+				<h2>docker-yi-runtime</h2>
+				<p>零一万物（34B）的本地运行环境。</p>
+				<a href="https://github.com/soulteary/docker-yi-runtime" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/11/26/locally-run-the-yi-34b-large-model-of-kai-fu-lee.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/simple-image-search-engine" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年11月25日</span>
+				<span class="create">创建:2023年11月14日</span>
+			</div>
+			<figcaption>
+				<h2>simple-image-search-engine</h2>
+				<p>图片搜索引擎，很简单。三步构建属于你自己的图片搜索引擎，掌握向量数据库和以图搜图、文本搜索图片。</p>
+				<a href="https://github.com/soulteary/simple-image-search-engine" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/11/15/use-redis-to-build-a-lightweight-vector-database-application-image-search-engine-part-1.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/home-network-note" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年9月18日</span>
+				<span class="create">创建:2014年11月28日</span>
+			</div>
+			<figcaption>
+				<h2>Home-Network-Note</h2>
+				<p>🚧 持续更新 🚧 记录搭建兼顾学习娱乐的家用网络环境的过程，折腾过的一些软硬件小经验。</p>
+				<a href="https://github.com/soulteary/Home-Network-Note" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://home-network-note.suyang.wiki/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/llama-docker-playground" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年9月13日</span>
+				<span class="create">创建:2023年3月9日</span>
+			</div>
+			<figcaption>
+				<h2>llama-docker-playground</h2>
+				<p>Quick Start LLaMA models with multiple methods, and fine-tune 7B/65B with One-Click.</p>
+				<a href="https://github.com/soulteary/llama-docker-playground" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/03/09/quick-start-llama-model-created-by-meta-research.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-llama2-chat" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年8月14日</span>
+				<span class="create">创建:2023年7月19日</span>
+			</div>
+			<figcaption>
+				<h2>docker-llama2-chat</h2>
+				<p>Play LLaMA2 (official / 中文版 / INT4 / llama2.cpp) Together! ONLY 3 STEPS! ( non GPU / 5GB vRAM / 8~14GB vRAM)</p>
+				<a href="https://github.com/soulteary/docker-llama2-chat" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://www.zhihu.com/people/soulteary/posts" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/open-ai-camera" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年8月8日</span>
+				<span class="create">创建:2023年8月8日</span>
+			</div>
+			<figcaption>
+				<h2>open-ai-camera</h2>
+				<p>本地隐私优先的，AI 人像相机解决方案，基于 Docker 和 Stable Diffusion。</p>
+				<a href="https://github.com/soulteary/open-ai-camera" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-codeformer" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年8月8日</span>
+				<span class="create">创建:2023年7月30日</span>
+			</div>
+			<figcaption>
+				<h2>docker-codeformer</h2>
+				<p>快速体验 & 上手 CodeFormer，2G 显存可以玩。</p>
+				<a href="https://github.com/soulteary/docker-codeformer" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/08/02/stable-diffusion-hardcore-survival-guide-codeformer-in-webui.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-gfpgan" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年8月8日</span>
+				<span class="create">创建:2022年5月19日</span>
+			</div>
+			<figcaption>
+				<h2>docker-gfpgan</h2>
+				<p>TencentARC GFPGAN ALL-IN-ONE Docker Images. support x86 / ARM.</p>
+				<a href="https://github.com/soulteary/docker-gfpgan" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/05/20/use-docker-to-run-huggingface-models.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-code-interpreter" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年7月25日</span>
+				<span class="create">创建:2023年7月24日</span>
+			</div>
+			<figcaption>
+				<h2>docker-code-interpreter</h2>
+				<p>One-click Docker APPs of Open-source Code Interpreter Projects.</p>
+				<a href="https://github.com/soulteary/docker-code-interpreter" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/07/25/open-source-implementation-of-openai-code-interpreter-gpt-code-ui.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/go-closure-compiler" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月30日</span>
+				<span class="create">创建:2023年6月30日</span>
+			</div>
+			<figcaption>
+				<h2>go-closure-compiler</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/go-closure-compiler" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/js-region-picker" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月29日</span>
+				<span class="create">创建:2023年6月14日</span>
+			</div>
+			<figcaption>
+				<h2>js-region-picker</h2>
+				<p>A JavaScript Region Picker written by vanilla JS.</p>
+				<a href="https://github.com/soulteary/js-region-picker" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/js-year-picker" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月29日</span>
+				<span class="create">创建:2023年6月16日</span>
+			</div>
+			<figcaption>
+				<h2>js-year-picker</h2>
+				<p>A JavaScript Year Range Picker written by vanilla JS.</p>
+				<a href="https://github.com/soulteary/js-year-picker" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/js-field-picker" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月29日</span>
+				<span class="create">创建:2023年6月15日</span>
+			</div>
+			<figcaption>
+				<h2>js-field-picker</h2>
+				<p>A JavaScript Field Picker written by vanilla JS.</p>
+				<a href="https://github.com/soulteary/js-field-picker" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/global-university-icon" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月25日</span>
+				<span class="create">创建:2023年6月23日</span>
+			</div>
+			<figcaption>
+				<h2>global-university-icon</h2>
+				<p>Global universities and scientific research institutions: vector icons, school emblems, logos...</p>
+				<a href="https://github.com/soulteary/global-university-icon" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/china-university-icon" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月20日</span>
+				<span class="create">创建:2023年6月19日</span>
+			</div>
+			<figcaption>
+				<h2>china-university-icon</h2>
+				<p>中国大学校徽</p>
+				<a href="https://github.com/soulteary/china-university-icon" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-py-pdf-parser" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月12日</span>
+				<span class="create">创建:2023年6月12日</span>
+			</div>
+			<figcaption>
+				<h2>docker-py-pdf-parser</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/docker-py-pdf-parser" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/remote-hosts-server" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月6日</span>
+				<span class="create">创建:2022年10月22日</span>
+			</div>
+			<figcaption>
+				<h2>remote-hosts-server</h2>
+				<p>Tiny(~5MB), Easy, Docker Support. Manage and share your Hosts configuration, suitable for tools such as Switch Hosts.</p>
+				<a href="https://github.com/soulteary/remote-hosts-server" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/10/24/online-sharing-hosts-rules-tool-remote-hosts-server.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/domain-dashboard" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月6日</span>
+				<span class="create">创建:2023年2月26日</span>
+			</div>
+			<figcaption>
+				<h2>domain-dashboard</h2>
+				<p>[wip]simple domain dashboard</p>
+				<a href="https://github.com/soulteary/domain-dashboard" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/nginx-formatter" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月1日</span>
+				<span class="create">创建:2023年4月18日</span>
+			</div>
+			<figcaption>
+				<h2>nginx-formatter</h2>
+				<p>Small and easy-to-use Nginx configuration formatting tool (CLI & GUI), support Docker, x86, ARM, macOS...</p>
+				<a href="https://github.com/soulteary/nginx-formatter" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/05/20/code-writing-practice-supported-by-ai-quickly-implement-nginx-configuration-formatting-tool.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/hosts-blackhole" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年6月1日</span>
+				<span class="create">创建:2022年5月30日</span>
+			</div>
+			<figcaption>
+				<h2>hosts-blackhole</h2>
+				<p>BEST hosts list processing helper for ad-blocking/blocker programs: AdGuard, AdAway, blocky, grimd...</p>
+				<a href="https://github.com/soulteary/hosts-blackhole" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/csrankings-rules-extractor" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月30日</span>
+				<span class="create">创建:2023年5月25日</span>
+			</div>
+			<figcaption>
+				<h2>csrankings-rules-extractor</h2>
+				<p>Extract CS Rankings rules.</p>
+				<a href="https://github.com/soulteary/csrankings-rules-extractor" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-chatgpt" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月29日</span>
+				<span class="create">创建:2023年5月10日</span>
+			</div>
+			<figcaption>
+				<h2>docker-chatgpt</h2>
+				<p>< 10MB, One-click self-hosted ChatGPT, allowing access to various data sources and non-OpenAI models.</p>
+				<a href="https://github.com/soulteary/docker-chatgpt" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://github.com/soulteary/sparrow" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/go-nameparser" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月26日</span>
+				<span class="create">创建:2023年5月22日</span>
+			</div>
+			<figcaption>
+				<h2>go-nameparser</h2>
+				<p>Nameparser API services, python-nameparser implemented by golang.</p>
+				<a href="https://github.com/soulteary/go-nameparser" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/05/22/using-golang-and-docker-to-implement-python-computing-services.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/go-python-ast" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月26日</span>
+				<span class="create">创建:2023年5月26日</span>
+			</div>
+			<figcaption>
+				<h2>go-python-ast</h2>
+				<p>Get Python AST with Go.</p>
+				<a href="https://github.com/soulteary/go-python-ast" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/05/22/using-golang-and-docker-to-implement-python-computing-services.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-python-in-go" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月26日</span>
+				<span class="create">创建:2023年5月21日</span>
+			</div>
+			<figcaption>
+				<h2>docker-python-in-go</h2>
+				<p>How to use Python in Go, and in the Docker.</p>
+				<a href="https://github.com/soulteary/docker-python-in-go" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/05/21/run-python-code-with-golang-and-docker.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/acm-fellows-api" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月23日</span>
+				<span class="create">创建:2023年5月23日</span>
+			</div>
+			<figcaption>
+				<h2>acm-fellows-api</h2>
+				<p>API of ACM Fellows.</p>
+				<a href="https://github.com/soulteary/acm-fellows-api" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/forever-coolshell" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月19日</span>
+				<span class="create">创建:2023年5月15日</span>
+			</div>
+			<figcaption>
+				<h2>forever-coolshell</h2>
+				<p>酷壳 - CoolShell 电子存档，🕯️ 谨纪念和保存陈皓先生的公开的技术分享内容，感恩皓叔对中文互联网，尤其是技术领域无私的分享。</p>
+				<a href="https://github.com/soulteary/forever-coolshell" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://github.com/megaease/Remembering-Haoel" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/mushu" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月14日</span>
+				<span class="create">创建:2023年5月12日</span>
+			</div>
+			<figcaption>
+				<h2>mushu</h2>
+				<p>Build a communication bridge for browsers.</p>
+				<a href="https://github.com/soulteary/mushu" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-nomnoml" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月7日</span>
+				<span class="create">创建:2021年1月11日</span>
+			</div>
+			<figcaption>
+				<h2>docker-nomnoml</h2>
+				<p>Docker Nomnoml is a simple but elegant self-hosted UML Generator & UML Sharing solution.</p>
+				<a href="https://github.com/soulteary/docker-nomnoml" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/nginx-qrcode-server" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月7日</span>
+				<span class="create">创建:2021年1月6日</span>
+			</div>
+			<figcaption>
+				<h2>nginx-qrcode-server</h2>
+				<p>High Performance QR Code Server with Nginx, Close to the size of the official Nginx Docker Image (~ 55MB).</p>
+				<a href="https://github.com/soulteary/nginx-qrcode-server" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://www.zhihu.com/question/21483073/answer/2647942304" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-emotion" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月7日</span>
+				<span class="create">创建:2022年9月29日</span>
+			</div>
+			<figcaption>
+				<h2>docker-emotion</h2>
+				<p>Out-of-the-box text emotion / sentiment analysis application, supports Chinese and English.</p>
+				<a href="https://github.com/soulteary/docker-emotion" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/09/30/nlp-text-sentiment-analysis-application-using-docker-and-huggingface.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/simple-kms" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月6日</span>
+				<span class="create">创建:2023年3月8日</span>
+			</div>
+			<figcaption>
+				<h2>simple-kms</h2>
+				<p>[WIP] simple kms for self-hosted app</p>
+				<a href="https://github.com/soulteary/simple-kms" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/go-counting-stars" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月6日</span>
+				<span class="create">创建:2022年12月11日</span>
+			</div>
+			<figcaption>
+				<h2>go-counting-stars</h2>
+				<p>[WIP] ✨ A simple and reliable visit counter, written in Go, capable of displaying visit counts on GitHub or other projects.</p>
+				<a href="https://github.com/soulteary/go-counting-stars" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/mini-shortener" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月6日</span>
+				<span class="create">创建:2022年8月14日</span>
+			</div>
+			<figcaption>
+				<h2>mini-shortener</h2>
+				<p>Zero dependency, configuration-based, short link service with less than 200 lines.</p>
+				<a href="https://github.com/soulteary/mini-shortener" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/go-dnsmasq" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年5月6日</span>
+				<span class="create">创建:2021年8月18日</span>
+			</div>
+			<figcaption>
+				<h2>go-dnsmasq</h2>
+				<p>Docker Go DNSMASQ :dolphin: Lightweight caching DNS server/forwarder</p>
+				<a href="https://github.com/soulteary/go-dnsmasq" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-prompt-generator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年4月5日</span>
+				<span class="create">创建:2023年4月4日</span>
+			</div>
+			<figcaption>
+				<h2>docker-prompt-generator</h2>
+				<p>Using a Model to generate prompts for Model applications. / 使用模型来生成作图咒语的偷懒工具，支持 MidJourney、Stable Diffusion 等。</p>
+				<a href="https://github.com/soulteary/docker-prompt-generator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/04/05/eighty-lines-of-code-to-implement-the-open-source-midjourney-and-stable-diffusion-spell-drawing-tool.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/lorenote" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年3月29日</span>
+				<span class="create">创建:2023年3月29日</span>
+			</div>
+			<figcaption>
+				<h2>lorenote</h2>
+				<p>A knowledge note tool/solution that combines engineering and AI.</p>
+				<a href="https://github.com/soulteary/lorenote" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-jumpserver" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年3月28日</span>
+				<span class="create">创建:2023年3月28日</span>
+			</div>
+			<figcaption>
+				<h2>docker-jumpserver</h2>
+				<p>jumpserver dockerize</p>
+				<a href="https://github.com/soulteary/docker-jumpserver" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/go-cloud-id" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年3月8日</span>
+				<span class="create">创建:2023年3月8日</span>
+			</div>
+			<figcaption>
+				<h2>go-cloud-id</h2>
+				<p>Golang get the cloud identity.</p>
+				<a href="https://github.com/soulteary/go-cloud-id" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/ghost-aliyun-oss-store" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年3月3日</span>
+				<span class="create">创建:2020年3月14日</span>
+			</div>
+			<figcaption>
+				<h2>ghost-aliyun-oss-store</h2>
+				<p>Ghost v3.x use Aliyun OSS storage.</p>
+				<a href="https://github.com/soulteary/ghost-aliyun-oss-store" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2020/03/14/ghost-running-in-docker-supports-alibaba-cloud-oss.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/apt-proxy" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年2月23日</span>
+				<span class="create">创建:2022年6月11日</span>
+			</div>
+			<figcaption>
+				<h2>apt-proxy</h2>
+				<p>[Ubuntu / Debian / CentOS / Alpine] Lightweight APT / YUM / APK CHACHE PROXY with only 2MB+ size!</p>
+				<a href="https://github.com/soulteary/apt-proxy" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/11/20/linux-package-download-acceleration-tool-apt-proxy.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/easy-esxi-builder" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2023年1月29日</span>
+				<span class="create">创建:2023年1月29日</span>
+			</div>
+			<figcaption>
+				<h2>easy-ESXi-builder</h2>
+				<p>Still having trouble building environments for ESXi? Just use this one-click tool.</p>
+				<a href="https://github.com/soulteary/easy-ESXi-builder" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2023/01/29/how-to-easily-create-and-install-a-custom-esxi-image.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/ml-stable-diffusion" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年12月22日</span>
+				<span class="create">创建:2022年12月9日</span>
+			</div>
+			<figcaption>
+				<h2>ml-stable-diffusion</h2>
+				<p>Stable Diffusion with Core ML on Apple Silicon</p>
+				<a href="https://github.com/soulteary/ml-stable-diffusion" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-stable-diffusion-taiyi" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年12月9日</span>
+				<span class="create">创建:2022年12月9日</span>
+			</div>
+			<figcaption>
+				<h2>docker-stable-diffusion-taiyi</h2>
+				<p>带 Web UI 的 Docker taiyi (太乙)，中文 Stable Diffusion WebUI 一键运行环境。</p>
+				<a href="https://github.com/soulteary/docker-stable-diffusion-taiyi" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/12/09/use-docker-to-quickly-get-started-with-the-chinese-stable-diffusion-model-taiyi.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/prebuilt-nginx-modules" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年10月5日</span>
+				<span class="create">创建:2021年3月4日</span>
+			</div>
+			<figcaption>
+				<h2>prebuilt-nginx-modules</h2>
+				<p>A bunch of useful pre-built modules for nginx, can be used directly in docker or Debian/Ubuntu.</p>
+				<a href="https://github.com/soulteary/prebuilt-nginx-modules" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/ngx-php-micro-blog" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年10月5日</span>
+				<span class="create">创建:2022年10月3日</span>
+			</div>
+			<figcaption>
+				<h2>ngx-php-micro-blog</h2>
+				<p>Microlog example based on Nginx and Nginx module (NGX-PHP8), A high-performance implementation that does not use the combination of Nginx and PHP-FPM, which is safe and reliable.</p>
+				<a href="https://github.com/soulteary/ngx-php-micro-blog" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/10/05/nginx-black-magic-low-cost-high-performance-applications-using-ngx-php-modules.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/portable-docker-app" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年10月5日</span>
+				<span class="create">创建:2022年9月15日</span>
+			</div>
+			<figcaption>
+				<h2>portable-docker-app</h2>
+				<p>🎩 Magic in Pocket / 🪄 口袋里的“魔法”.</p>
+				<a href="https://github.com/soulteary/portable-docker-app" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/nginx-proxy-hls-example" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年10月5日</span>
+				<span class="create">创建:2022年10月5日</span>
+			</div>
+			<figcaption>
+				<h2>nginx-proxy-hls-example</h2>
+				<p>A simple example to demonstrate Nginx native capabilities: proxy hls.</p>
+				<a href="https://github.com/soulteary/nginx-proxy-hls-example" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/which-mi-phone-should-buy-for-flashing" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年9月18日</span>
+				<span class="create">创建:2022年9月18日</span>
+			</div>
+			<figcaption>
+				<h2>which-mi-phone-should-buy-for-flashing</h2>
+				<p>哪块小米/红米手机买来刷机合适呢？/ Which Mi Phone should buy for flashing?</p>
+				<a href="https://github.com/soulteary/which-mi-phone-should-buy-for-flashing" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-openblas" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年9月15日</span>
+				<span class="create">创建:2022年6月2日</span>
+			</div>
+			<figcaption>
+				<h2>docker-openblas</h2>
+				<p>OpenBLAS docker pre-built images for Milvus, help ubuntu 22.04 / 20.04 /18.04, Intel / AMD / ARMv8 multi-arch CPU users save time!</p>
+				<a href="https://github.com/soulteary/docker-openblas" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/text-retrieval-example" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年9月13日</span>
+				<span class="create">创建:2022年9月10日</span>
+			</div>
+			<figcaption>
+				<h2>text-retrieval-example</h2>
+				<p>Let's talk about text retrieval.</p>
+				<a href="https://github.com/soulteary/text-retrieval-example" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/09/10/the-dimensionality-reduction-of-traditional-text-retrieval-methods-using-faiss-to-achieve-vector-semantic-retrieval.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/golang-playground" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年8月3日</span>
+				<span class="create">创建:2022年6月26日</span>
+			</div>
+			<figcaption>
+				<h2>golang-playground</h2>
+				<p>Play Golang in Web by Docker!</p>
+				<a href="https://github.com/soulteary/golang-playground" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/funny-china-weather" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年8月3日</span>
+				<span class="create">创建:2022年2月18日</span>
+			</div>
+			<figcaption>
+				<h2>funny-china-weather</h2>
+				<p>开箱即用的天气软件包，获取基础的天气信息，以及对应天气的动态图标。</p>
+				<a href="https://github.com/soulteary/funny-china-weather" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/homelab-group" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年6月19日</span>
+				<span class="create">创建:2022年6月19日</span>
+			</div>
+			<figcaption>
+				<h2>homelab-group</h2>
+				<p>Just Waiting for the ICP process to end and update the content</p>
+				<a href="https://github.com/soulteary/homelab-group" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/zheteng-it" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年6月16日</span>
+				<span class="create">创建:2021年8月6日</span>
+			</div>
+			<figcaption>
+				<h2>zheteng-it</h2>
+				<p>📒持续更新📒 开源的折腾笔记，分享一些尚未写成博客的内容。</p>
+				<a href="https://github.com/soulteary/zheteng-it" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://suyang.wiki" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-milvus" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年6月8日</span>
+				<span class="create">创建:2022年6月1日</span>
+			</div>
+			<figcaption>
+				<h2>docker-milvus</h2>
+				<p>[WIP] Reliable, highly scalable Milvus docker images</p>
+				<a href="https://github.com/soulteary/docker-milvus" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/have-fun-with-animegan" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年6月3日</span>
+				<span class="create">创建:2022年5月22日</span>
+			</div>
+			<figcaption>
+				<h2>have-fun-with-AnimeGAN</h2>
+				<p>Have fun with the model: AnimeGAN</p>
+				<a href="https://github.com/soulteary/have-fun-with-AnimeGAN" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-pytorch-playground" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年5月19日</span>
+				<span class="create">创建:2022年5月19日</span>
+			</div>
+			<figcaption>
+				<h2>docker-pytorch-playground</h2>
+				<p>Running models faster and easier, support for x86 and ARM (M1, M1Pro).</p>
+				<a href="https://github.com/soulteary/docker-pytorch-playground" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/05/20/use-docker-to-run-huggingface-models.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/gvm" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年5月11日</span>
+				<span class="create">创建:2022年5月11日</span>
+			</div>
+			<figcaption>
+				<h2>gvm</h2>
+				<p>Go Version Manager, supports x86 and M1,M2 devices</p>
+				<a href="https://github.com/soulteary/gvm" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/07/04/build-a-maintainable-golang-development-environment.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/electron-monitor" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年4月17日</span>
+				<span class="create">创建:2022年4月17日</span>
+			</div>
+			<figcaption>
+				<h2>electron-monitor</h2>
+				<p>Retro Style Status Monitor Page.</p>
+				<a href="https://github.com/soulteary/electron-monitor" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/traefik-example" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年2月16日</span>
+				<span class="create">创建:2021年1月26日</span>
+			</div>
+			<figcaption>
+				<h2>traefik-example</h2>
+				<p>Traefik 快速上手示例</p>
+				<a href="https://github.com/soulteary/traefik-example" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/tags/traefik.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/padavan-network-traffic-calc" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年2月12日</span>
+				<span class="create">创建:2022年2月12日</span>
+			</div>
+			<figcaption>
+				<h2>padavan-network-traffic-calc</h2>
+				<p>Padavan Network Traffic Calculator / Padavan 网络流量计算器</p>
+				<a href="https://github.com/soulteary/padavan-network-traffic-calc" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.github.io/padavan-network-traffic-calc/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-flame" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年1月30日</span>
+				<span class="create">创建:2022年1月5日</span>
+			</div>
+			<figcaption>
+				<h2>docker-flame</h2>
+				<p>简洁美观的个人启动页，适用于 HomeLab 爱好者的中文化的自部署版本。</p>
+				<a href="https://github.com/soulteary/docker-flame" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-wechat-markdown-editor" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年1月26日</span>
+				<span class="create">创建:2022年1月26日</span>
+			</div>
+			<figcaption>
+				<h2>docker-wechat-markdown-editor</h2>
+				<p>开箱即食的微信编辑器。（容器镜像大约6M）</p>
+				<a href="https://github.com/soulteary/docker-wechat-markdown-editor" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/awesome-golang-embed" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2022年1月16日</span>
+				<span class="create">创建:2022年1月15日</span>
+			</div>
+			<figcaption>
+				<h2>awesome-golang-embed</h2>
+				<p>WIP (Golang) Everything you ever wanted to know about static resource embedding</p>
+				<a href="https://github.com/soulteary/awesome-golang-embed" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2022/01/15/explain-the-golang-resource-embedding-solution-part-1.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/tech-radar-demo" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年12月22日</span>
+				<span class="create">创建:2021年12月22日</span>
+			</div>
+			<figcaption>
+				<h2>tech-radar-demo</h2>
+				<p>A simple technical radar implementation</p>
+				<a href="https://github.com/soulteary/tech-radar-demo" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/tags/techradar.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-outline" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年11月19日</span>
+				<span class="create">创建:2021年9月4日</span>
+			</div>
+			<figcaption>
+				<h2>docker-outline</h2>
+				<p>A simple 🧑‍💻 and reliable self-hosted plan for Outline.</p>
+				<a href="https://github.com/soulteary/docker-outline" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://github.com/soulteary/docker-sso-server" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/nginx-rsa-encryption" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年11月14日</span>
+				<span class="create">创建:2021年11月14日</span>
+			</div>
+			<figcaption>
+				<h2>nginx-rsa-encryption</h2>
+				<p>Use NJS to implement RSA automatic encryption and decryption with API interface</p>
+				<a href="https://github.com/soulteary/nginx-rsa-encryption" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2021/11/14/use-nginx-njs-to-implement-high-performance-rsa-encryption-and-decryption-services.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/njs-learning-materials" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年11月14日</span>
+				<span class="create">创建:2021年1月10日</span>
+			</div>
+			<figcaption>
+				<h2>njs-learning-materials</h2>
+				<p>List some learning materials to help you step into the world of njs.</p>
+				<a href="https://github.com/soulteary/njs-learning-materials" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-njs" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年11月13日</span>
+				<span class="create">创建:2021年1月10日</span>
+			</div>
+			<figcaption>
+				<h2>docker-njs</h2>
+				<p>Pure njs(Nginx JavaScript) Docker image, more convenient for development and debugging.</p>
+				<a href="https://github.com/soulteary/docker-njs" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://hub.docker.com/r/soulteary/docker-njs" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/offline-logs-to-clickhouse" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年11月12日</span>
+				<span class="create">创建:2021年11月11日</span>
+			</div>
+			<figcaption>
+				<h2>offline-logs-to-clickhouse</h2>
+				<p>Offline Logs Processing for ClickHouse.</p>
+				<a href="https://github.com/soulteary/offline-logs-to-clickhouse" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2021/11/11/use-clickhouse-to-process-offline-semi-structured-logs.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-sso-server" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年9月22日</span>
+				<span class="create">创建:2021年8月10日</span>
+			</div>
+			<figcaption>
+				<h2>docker-sso-server</h2>
+				<p>Lightweight 🪶 self-hosted SSO server, resource utilization rate is <1% CPU, MEM <15 M</p>
+				<a href="https://github.com/soulteary/docker-sso-server" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/hugo-helper" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年8月23日</span>
+				<span class="create">创建:2021年8月23日</span>
+			</div>
+			<figcaption>
+				<h2>hugo-helper</h2>
+				<p>存放一些能够让 Hugo 更好用的小工具，支持更加结构化的使用文章数据。</p>
+				<a href="https://github.com/soulteary/hugo-helper" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年8月21日</span>
+				<span class="create">创建:2016年8月2日</span>
+			</div>
+			<figcaption>
+				<h2>docker</h2>
+				<p>🐳</p>
+				<a href="https://github.com/soulteary/docker" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/njs-ddns-service" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年8月2日</span>
+				<span class="create">创建:2021年8月2日</span>
+			</div>
+			<figcaption>
+				<h2>njs-ddns-service</h2>
+				<p>Use NJS to implement DDNS service</p>
+				<a href="https://github.com/soulteary/njs-ddns-service" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/tags/nginx.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/linux-scripts" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年7月7日</span>
+				<span class="create">创建:2021年1月31日</span>
+			</div>
+			<figcaption>
+				<h2>linux-scripts</h2>
+				<p>Store some useful small scripts.</p>
+				<a href="https://github.com/soulteary/linux-scripts" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/homelab-https" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年7月6日</span>
+				<span class="create">创建:2021年7月6日</span>
+			</div>
+			<figcaption>
+				<h2>homelab-https</h2>
+				<p>Make it easier for your homelab to use HTTP certificates</p>
+				<a href="https://github.com/soulteary/homelab-https" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-dokuwiki" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年6月23日</span>
+				<span class="create">创建:2021年6月23日</span>
+			</div>
+			<figcaption>
+				<h2>docker-dokuwiki</h2>
+				<p>Elegant docker environment, for DokuWiki.</p>
+				<a href="https://github.com/soulteary/docker-dokuwiki" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2021/06/23/talk-about-php-application-dockerize-from-dokuwiki.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-nginx-time-api" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年3月22日</span>
+				<span class="create">创建:2021年3月22日</span>
+			</div>
+			<figcaption>
+				<h2>docker-nginx-time-api</h2>
+				<p>Docker + NGINX + PreBuilt Module = Simple high-performance API.</p>
+				<a href="https://github.com/soulteary/docker-nginx-time-api" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-nginx-api-aggregation" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年3月18日</span>
+				<span class="create">创建:2021年3月18日</span>
+			</div>
+			<figcaption>
+				<h2>docker-nginx-api-aggregation</h2>
+				<p>Docker + NGINX (NJS) = API Aggregation.</p>
+				<a href="https://github.com/soulteary/docker-nginx-api-aggregation" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/njs-example" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年3月3日</span>
+				<span class="create">创建:2021年3月2日</span>
+			</div>
+			<figcaption>
+				<h2>njs-example</h2>
+				<p>Use cases for NJS that can be used in production environments.</p>
+				<a href="https://github.com/soulteary/njs-example" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/practice-code-of-rust" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年2月27日</span>
+				<span class="create">创建:2021年2月26日</span>
+			</div>
+			<figcaption>
+				<h2>practice-code-of-rust</h2>
+				<p>RUST language learning practice code.</p>
+				<a href="https://github.com/soulteary/practice-code-of-rust" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-tabix" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年2月11日</span>
+				<span class="create">创建:2021年2月11日</span>
+			</div>
+			<figcaption>
+				<h2>docker-tabix</h2>
+				<p>Tabix Docker Image,  Version 18.07.1.</p>
+				<a href="https://github.com/soulteary/docker-tabix" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/posts-adapter-pure-to-hugo" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年2月4日</span>
+				<span class="create">创建:2017年4月21日</span>
+			</div>
+			<figcaption>
+				<h2>posts-adapter-pure-to-hugo</h2>
+				<p>code highlight / post expect / archives features for pure markdown file.</p>
+				<a href="https://github.com/soulteary/posts-adapter-pure-to-hugo" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-nginx-forward-proxy" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年2月3日</span>
+				<span class="create">创建:2021年1月26日</span>
+			</div>
+			<figcaption>
+				<h2>docker-nginx-forward-proxy</h2>
+				<p>For Centrally manage application export traffic, A/B testing, etc. Perhaps the smallest nginx forward proxy server docker images.</p>
+				<a href="https://github.com/soulteary/docker-nginx-forward-proxy" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://hub.docker.com/r/soulteary/docker-nginx-forward-proxy" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-phabricator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年2月3日</span>
+				<span class="create">创建:2021年2月3日</span>
+			</div>
+			<figcaption>
+				<h2>docker-phabricator</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/docker-phabricator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-lobsters" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年1月14日</span>
+				<span class="create">创建:2021年1月14日</span>
+			</div>
+			<figcaption>
+				<h2>docker-lobsters</h2>
+				<p>Get your “HackNews” in three minutes.</p>
+				<a href="https://github.com/soulteary/docker-lobsters" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/gitlab-variable-helper" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2021年1月5日</span>
+				<span class="create">创建:2019年7月27日</span>
+			</div>
+			<figcaption>
+				<h2>gitlab-variable-helper</h2>
+				<p>Allow use configuration file update gitlab group variables.</p>
+				<a href="https://github.com/soulteary/gitlab-variable-helper" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/tengine-website-generator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2020年12月7日</span>
+				<span class="create">创建:2016年12月1日</span>
+			</div>
+			<figcaption>
+				<h2>tengine-website-generator</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/tengine-website-generator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/redirect-test" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2020年11月16日</span>
+				<span class="create">创建:2020年11月16日</span>
+			</div>
+			<figcaption>
+				<h2>redirect-test</h2>
+				<p>Redirect performance test.</p>
+				<a href="https://github.com/soulteary/redirect-test" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2020/11/16/nine-redirection-schemes-and-performance-comparison.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/generator-lazy" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2020年10月20日</span>
+				<span class="create">创建:2015年5月6日</span>
+			</div>
+			<figcaption>
+				<h2>generator-lazy</h2>
+				<p>一个要努力成为机智✨的脚手架的工具🔧，给你的项目一个好的开始。</p>
+				<a href="https://github.com/soulteary/generator-lazy" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/docker-gitbook-pdf-generator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2020年8月18日</span>
+				<span class="create">创建:2019年5月7日</span>
+			</div>
+			<figcaption>
+				<h2>docker-gitbook-pdf-generator</h2>
+				<p>如果你想使用 GitBook 生成 PDF ，又不想折腾，使用这个项目就对啦！</p>
+				<a href="https://github.com/soulteary/docker-gitbook-pdf-generator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2019/05/07/generate-small-gitbook-pdf-using-the-docker-with-python.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/youling" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2020年3月8日</span>
+				<span class="create">创建:2020年1月18日</span>
+			</div>
+			<figcaption>
+				<h2>youling</h2>
+				<p>Ghost CJK Version. 既然官方不喜欢非英文用户，那么就不提PR了，顺便用换个非英文名好了。</p>
+				<a href="https://github.com/soulteary/youling" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/phabricator-dockerize" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2020年2月3日</span>
+				<span class="create">创建:2020年2月1日</span>
+			</div>
+			<figcaption>
+				<h2>phabricator-dockerize</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/phabricator-dockerize" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/gulp-lazy-tpl" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2020年1月19日</span>
+				<span class="create">创建:2015年6月2日</span>
+			</div>
+			<figcaption>
+				<h2>gulp-lazy-tpl</h2>
+				<p>模板构建工具。</p>
+				<a href="https://github.com/soulteary/gulp-lazy-tpl" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/hexo-extend-plugin" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2019年7月4日</span>
+				<span class="create">创建:2016年8月4日</span>
+			</div>
+			<figcaption>
+				<h2>hexo-extend-plugin</h2>
+				<p>Hexo Plugin: extend api, give you more features.</p>
+				<a href="https://github.com/soulteary/hexo-extend-plugin" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/hexo-document-example" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2019年7月4日</span>
+				<span class="create">创建:2016年8月17日</span>
+			</div>
+			<figcaption>
+				<h2>hexo-document-example</h2>
+				<p>hexo document example site.</p>
+				<a href="https://github.com/soulteary/hexo-document-example" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/streamworld-quest-saveeditor" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2019年6月8日</span>
+				<span class="create">创建:2019年6月8日</span>
+			</div>
+			<figcaption>
+				<h2>StreamWorld-Quest-SaveEditor</h2>
+				<p>Save Your Time, Just Enjoy the Card Battle.</p>
+				<a href="https://github.com/soulteary/StreamWorld-Quest-SaveEditor" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/you-dont-need-webpack" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2019年5月26日</span>
+				<span class="create">创建:2019年5月26日</span>
+			</div>
+			<figcaption>
+				<h2>You-Dont-Need-Webpack</h2>
+				<p>without build, without wait.</p>
+				<a href="https://github.com/soulteary/You-Dont-Need-Webpack" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2019/05/27/your-website-may-not-need-front-end-builds.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/autoindex" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2019年4月27日</span>
+				<span class="create">创建:2018年12月16日</span>
+			</div>
+			<figcaption>
+				<h2>autoindex</h2>
+				<p>A simple & neat AutoIndex website template for Nginx.</p>
+				<a href="https://github.com/soulteary/autoindex" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2018/12/16/implement-a-simple-directory-indexing-service-using-docker-and-nginx.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/traefik-aria2-with-webui" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2019年3月24日</span>
+				<span class="create">创建:2019年3月24日</span>
+			</div>
+			<figcaption>
+				<h2>traefik-aria2-with-webui</h2>
+				<p>Aria2 with WebUI and Traefik.</p>
+				<a href="https://github.com/soulteary/traefik-aria2-with-webui" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/decode-your-qrcode" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年12月9日</span>
+				<span class="create">创建:2018年12月9日</span>
+			</div>
+			<figcaption>
+				<h2>decode-your-qrcode</h2>
+				<p>《使用 Docker + Node 快速实现一个在线的QRCode解码服务》文章配套代码</p>
+				<a href="https://github.com/soulteary/decode-your-qrcode" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/wp2md" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年10月20日</span>
+				<span class="create">创建:2016年3月13日</span>
+			</div>
+			<figcaption>
+				<h2>wp2md</h2>
+				<p>Convert WordPress Posts to markdown files. / 将WordPress文章转换为md文件。</p>
+				<a href="https://github.com/soulteary/wp2md" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/k8s-images-trans-helper" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年9月25日</span>
+				<span class="create">创建:2018年9月25日</span>
+			</div>
+			<figcaption>
+				<h2>k8s-images-trans-helper</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/k8s-images-trans-helper" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/webpack-custom-plugin" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年9月5日</span>
+				<span class="create">创建:2017年11月30日</span>
+			</div>
+			<figcaption>
+				<h2>webpack-custom-plugin</h2>
+				<p>webpack output dynamics patch plugin.</p>
+				<a href="https://github.com/soulteary/webpack-custom-plugin" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/javascript-leetcode-playground" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年6月29日</span>
+				<span class="create">创建:2018年6月26日</span>
+			</div>
+			<figcaption>
+				<h2>javascript-leetcode-playground</h2>
+				<p>My JavaScript LeetCode Playground.</p>
+				<a href="https://github.com/soulteary/javascript-leetcode-playground" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/github-commit-monitor" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年6月11日</span>
+				<span class="create">创建:2018年6月11日</span>
+			</div>
+			<figcaption>
+				<h2>github-commit-monitor</h2>
+				<p>Display multiple repo commits at one time.</p>
+				<a href="https://github.com/soulteary/github-commit-monitor" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/chrome-extension-demo-for-page-performance" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年6月7日</span>
+				<span class="create">创建:2018年6月7日</span>
+			</div>
+			<figcaption>
+				<h2>chrome-extension-demo-for-page-performance</h2>
+				<p>DEMO: Another way to get page resources.</p>
+				<a href="https://github.com/soulteary/chrome-extension-demo-for-page-performance" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/hexo-blog" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年5月24日</span>
+				<span class="create">创建:2016年8月26日</span>
+			</div>
+			<figcaption>
+				<h2>hexo-blog</h2>
+				<p>test 1000+ posts with hexo (see issue#1)</p>
+				<a href="https://github.com/soulteary/hexo-blog" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/hugo-content-minify" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年5月12日</span>
+				<span class="create">创建:2018年5月8日</span>
+			</div>
+			<figcaption>
+				<h2>hugo-content-minify</h2>
+				<p>HTML minify tools.</p>
+				<a href="https://github.com/soulteary/hugo-content-minify" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/crayon-syntax-highlight" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2018年5月11日</span>
+				<span class="create">创建:2017年6月3日</span>
+			</div>
+			<figcaption>
+				<h2>crayon-syntax-highlight</h2>
+				<p>dockerize code highlight service: https://github.com/aramk/crayon-syntax-highlighter</p>
+				<a href="https://github.com/soulteary/crayon-syntax-highlight" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/bitbucket-padavan-update-checker" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2017年10月18日</span>
+				<span class="create">创建:2017年10月18日</span>
+			</div>
+			<figcaption>
+				<h2>bitbucket-padavan-update-checker</h2>
+				<p>检查bitbucket padavan仓库是否有更新</p>
+				<a href="https://github.com/soulteary/bitbucket-padavan-update-checker" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/serving-static-files" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2017年8月22日</span>
+				<span class="create">创建:2015年10月8日</span>
+			</div>
+			<figcaption>
+				<h2>serving-static-files</h2>
+				<p>A plan about serving static files && deployed.</p>
+				<a href="https://github.com/soulteary/serving-static-files" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/get-d2-2014-ticket" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2017年7月28日</span>
+				<span class="create">创建:2014年9月27日</span>
+			</div>
+			<figcaption>
+				<h2>Get-D2-2014-Ticket</h2>
+				<p>Get D2 2014 Ticket - Designer & Developer Frontend Technology Forum</p>
+				<a href="https://github.com/soulteary/Get-D2-2014-Ticket" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/improve-the-hugo" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2017年6月5日</span>
+				<span class="create">创建:2017年6月4日</span>
+			</div>
+			<figcaption>
+				<h2>improve-the-hugo</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/improve-the-hugo" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/soul-sacrifice-mem-hacks" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2017年5月3日</span>
+				<span class="create">创建:2017年5月2日</span>
+			</div>
+			<figcaption>
+				<h2>Soul-Sacrifice-Mem-Hacks</h2>
+				<p>draft for ssd mem hacks.</p>
+				<a href="https://github.com/soulteary/Soul-Sacrifice-Mem-Hacks" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/altas-website-generator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2017年3月13日</span>
+				<span class="create">创建:2017年3月7日</span>
+			</div>
+			<figcaption>
+				<h2>altas-website-generator</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/altas-website-generator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/jscs-preset-google-custom" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年9月5日</span>
+				<span class="create">创建:2016年9月5日</span>
+			</div>
+			<figcaption>
+				<h2>jscs-preset-google-custom</h2>
+				<p>a preset base google.</p>
+				<a href="https://github.com/soulteary/jscs-preset-google-custom" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/posts-adapter-wp2md-to-hexo" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年9月5日</span>
+				<span class="create">创建:2016年9月5日</span>
+			</div>
+			<figcaption>
+				<h2>posts-adapter-wp2md-to-hexo</h2>
+				<p>adapter for hexo use wp2md.</p>
+				<a href="https://github.com/soulteary/posts-adapter-wp2md-to-hexo" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/smart-mirror" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年9月2日</span>
+				<span class="create">创建:2016年4月7日</span>
+			</div>
+			<figcaption>
+				<h2>smart-mirror</h2>
+				<p>Build private mirrors, ensure the stability of development and publishing environment's dependence. / 搭建私有镜像，确保开发和发布环境的依赖稳定，推荐中国地区用户使用，大幅节约网络传输时间。</p>
+				<a href="https://github.com/soulteary/smart-mirror" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/story" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年8月30日</span>
+				<span class="create">创建:2016年4月2日</span>
+			</div>
+			<figcaption>
+				<h2>Story</h2>
+				<p>Tell a story, easier.</p>
+				<a href="https://github.com/soulteary/Story" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/yes-tree" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年8月26日</span>
+				<span class="create">创建:2015年6月9日</span>
+			</div>
+			<figcaption>
+				<h2>yes-tree</h2>
+				<p>Tree, nodejs ver.</p>
+				<a href="https://github.com/soulteary/yes-tree" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/story-utils" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年8月19日</span>
+				<span class="create">创建:2016年4月2日</span>
+			</div>
+			<figcaption>
+				<h2>Story-utils</h2>
+				<p>Utils for note.</p>
+				<a href="https://github.com/soulteary/Story-utils" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/story-fs" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年8月19日</span>
+				<span class="create">创建:2016年4月2日</span>
+			</div>
+			<figcaption>
+				<h2>Story-fs</h2>
+				<p>Filesystem for note.</p>
+				<a href="https://github.com/soulteary/Story-fs" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/hexo-theme-document" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年8月17日</span>
+				<span class="create">创建:2016年8月4日</span>
+			</div>
+			<figcaption>
+				<h2>hexo-theme-document</h2>
+				<p>Hexo document theme.</p>
+				<a href="https://github.com/soulteary/hexo-theme-document" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/document-builder" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年8月3日</span>
+				<span class="create">创建:2016年7月22日</span>
+			</div>
+			<figcaption>
+				<h2>document-builder</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/document-builder" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/common-webhook-template" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年8月2日</span>
+				<span class="create">创建:2016年7月20日</span>
+			</div>
+			<figcaption>
+				<h2>common-webhook-template</h2>
+				<p>先补个简单的github trigger，稍后补gitlab，etc...</p>
+				<a href="https://github.com/soulteary/common-webhook-template" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/funny-questions-and-code-snippets" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年7月5日</span>
+				<span class="create">创建:2016年7月4日</span>
+			</div>
+			<figcaption>
+				<h2>funny-questions-and-code-snippets</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/funny-questions-and-code-snippets" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/scroll-joke" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年6月7日</span>
+				<span class="create">创建:2016年6月7日</span>
+			</div>
+			<figcaption>
+				<h2>scroll-joke</h2>
+				<p>Endless rolling.</p>
+				<a href="https://github.com/soulteary/scroll-joke" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/debug.js" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年5月27日</span>
+				<span class="create">创建:2015年5月2日</span>
+			</div>
+			<figcaption>
+				<h2>debug.js</h2>
+				<p>Let browser debug better.</p>
+				<a href="https://github.com/soulteary/debug.js" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/js-pref-compare" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年5月19日</span>
+				<span class="create">创建:2016年5月19日</span>
+			</div>
+			<figcaption>
+				<h2>js-pref-compare</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/js-pref-compare" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/story.md" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年3月15日</span>
+				<span class="create">创建:2016年3月14日</span>
+			</div>
+			<figcaption>
+				<h2>Story.md</h2>
+				<p>Use markdown and cloud storage server to keep a diary or write your blog.</p>
+				<a href="https://github.com/soulteary/Story.md" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/demoauthenticator" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年3月4日</span>
+				<span class="create">创建:2016年3月3日</span>
+			</div>
+			<figcaption>
+				<h2>DemoAuthenticator</h2>
+				<p>A simple demo authenticator chrome ext.</p>
+				<a href="https://github.com/soulteary/DemoAuthenticator" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/electron-local-server-skeleton" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2016年1月4日</span>
+				<span class="create">创建:2016年1月4日</span>
+			</div>
+			<figcaption>
+				<h2>Electron-Local-Server-Skeleton</h2>
+				<p>A skeleton for local server which use electron.</p>
+				<a href="https://github.com/soulteary/Electron-Local-Server-Skeleton" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/demo-park" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年12月28日</span>
+				<span class="create">创建:2014年5月7日</span>
+			</div>
+			<figcaption>
+				<h2>demo-park</h2>
+				<p>A code playground and demo park // 一个简单的代码、示例展示工具。</p>
+				<a href="https://github.com/soulteary/demo-park" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://demo.soulteary.com/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/avatarcache" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年12月27日</span>
+				<span class="create">创建:2014年12月13日</span>
+			</div>
+			<figcaption>
+				<h2>AvatarCache</h2>
+				<p>Your Own Avatar Api.</p>
+				<a href="https://github.com/soulteary/AvatarCache" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://www.soulteary.com/2014/12/14/speedly-your-gravatar.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/url-param-parser.js" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年12月8日</span>
+				<span class="create">创建:2015年7月12日</span>
+			</div>
+			<figcaption>
+				<h2>url-param-parser.js</h2>
+				<p>A simple function to Parse URL Params.</p>
+				<a href="https://github.com/soulteary/url-param-parser.js" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/starbox" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年9月25日</span>
+				<span class="create">创建:2015年6月7日</span>
+			</div>
+			<figcaption>
+				<h2>StarBox</h2>
+				<p>Manage your github star && fav repo.</p>
+				<a href="https://github.com/soulteary/StarBox" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/emoji-extra" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年7月8日</span>
+				<span class="create">创建:2015年6月26日</span>
+			</div>
+			<figcaption>
+				<h2>emoji-extra</h2>
+				<p>extra emoji for meituan im.</p>
+				<a href="https://github.com/soulteary/emoji-extra" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/generator-lazy-demo" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年7月1日</span>
+				<span class="create">创建:2015年7月1日</span>
+			</div>
+			<figcaption>
+				<h2>generator-lazy-demo</h2>
+				<p>Generator Lazy Demo.</p>
+				<a href="https://github.com/soulteary/generator-lazy-demo" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/js-tasker" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年6月26日</span>
+				<span class="create">创建:2014年1月17日</span>
+			</div>
+			<figcaption>
+				<h2>js-tasker</h2>
+				<p>一个随便写的js tasker。</p>
+				<a href="https://github.com/soulteary/js-tasker" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://soulteary.github.io/js-tasker/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/jquery-city-select" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年6月4日</span>
+				<span class="create">创建:2013年5月10日</span>
+			</div>
+			<figcaption>
+				<h2>jquery-city-select</h2>
+				<p>一个简单的jQuery省市联动插件，支持AMD/CMD方式调用，当然，也支持直接引用。</p>
+				<a href="https://github.com/soulteary/jquery-city-select" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://soulteary.github.io/jquery-city-select/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/bpx" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年5月13日</span>
+				<span class="create">创建:2015年5月13日</span>
+			</div>
+			<figcaption>
+				<h2>BPX</h2>
+				<p>Blueprint for CSS.</p>
+				<a href="https://github.com/soulteary/BPX" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/xstorage" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年5月11日</span>
+				<span class="create">创建:2015年5月4日</span>
+			</div>
+			<figcaption>
+				<h2>xStorage</h2>
+				<p>Inspire by simpleStorage and jStorage (@andris9).</p>
+				<a href="https://github.com/soulteary/xStorage" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/xswitch.js" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年5月8日</span>
+				<span class="create">创建:2015年5月8日</span>
+			</div>
+			<figcaption>
+				<h2>xSwitch.js</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/xSwitch.js" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/xcookie" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年5月6日</span>
+				<span class="create">创建:2015年5月6日</span>
+			</div>
+			<figcaption>
+				<h2>xCookie</h2>
+				<p></p>
+				<a href="https://github.com/soulteary/xCookie" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/replace-google-fonts" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2015年3月26日</span>
+				<span class="create">创建:2014年6月8日</span>
+			</div>
+			<figcaption>
+				<h2>Replace-Google-Fonts</h2>
+				<p>Use Qihoo 360 Open Fonts Service to replace Google's.</p>
+				<a href="https://github.com/soulteary/Replace-Google-Fonts" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="https://soulteary.com/2014/06/09/replace-google-fonts.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/phone-number-verification" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2014年10月30日</span>
+				<span class="create">创建:2014年9月15日</span>
+			</div>
+			<figcaption>
+				<h2>phone-number-verification</h2>
+				<p>A simple phone number verification written by JavaScript.</p>
+				<a href="https://github.com/soulteary/phone-number-verification" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://soulteary.github.io/phone-number-verification/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/simple-i18n" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2014年7月28日</span>
+				<span class="create">创建:2014年6月21日</span>
+			</div>
+			<figcaption>
+				<h2>simple-i18N</h2>
+				<p>适用于单页面的i18N脚本。</p>
+				<a href="https://github.com/soulteary/simple-i18N" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://soulteary.github.io/simple-i18N/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/localstorage-limit-test" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2014年6月21日</span>
+				<span class="create">创建:2014年6月21日</span>
+			</div>
+			<figcaption>
+				<h2>localStorage-limit-test</h2>
+				<p>Collect localStorage limit, improve client storage decisions.</p>
+				<a href="https://github.com/soulteary/localStorage-limit-test" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://soulteary.github.io/localStorage-limit-test/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/replace-google-libs" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2014年6月14日</span>
+				<span class="create">创建:2014年6月14日</span>
+			</div>
+			<figcaption>
+				<h2>Replace-Google-Libs</h2>
+				<p>Use Qihoo 360 Open Libs Service to replace Google's.</p>
+				<a href="https://github.com/soulteary/Replace-Google-Libs" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://www.soulteary.com/2014/06/15/replace-google-libs.html" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/replace-google-fonts-ext" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2014年6月8日</span>
+				<span class="create">创建:2014年6月8日</span>
+			</div>
+			<figcaption>
+				<h2>Replace-Google-Fonts-Ext</h2>
+				<p>Use Qihoo 360 Open Fonts Service to replace Google's Chrome ext.</p>
+				<a href="https://github.com/soulteary/Replace-Google-Fonts-Ext" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/wordpress-for-sae" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2014年4月23日</span>
+				<span class="create">创建:2013年5月15日</span>
+			</div>
+			<figcaption>
+				<h2>wordpress-for-sae</h2>
+				<p>WordPress For SAE 3.9已更新.</p>
+				<a href="https://github.com/soulteary/wordpress-for-sae" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://wp4cloud.sinaapp.com/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/css-minimum-support" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2014年1月7日</span>
+				<span class="create">创建:2014年1月6日</span>
+			</div>
+			<figcaption>
+				<h2>CSS-Minimum-Support</h2>
+				<p>一份简单的CSS支持度列表。</p>
+				<a href="https://github.com/soulteary/CSS-Minimum-Support" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/error-tracer" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2013年10月9日</span>
+				<span class="create">创建:2013年5月20日</span>
+			</div>
+			<figcaption>
+				<h2>Error-Tracer</h2>
+				<p>简单的前端问题追踪程序，完善空间很大。</p>
+				<a href="https://github.com/soulteary/Error-Tracer" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://errorboard.sinaapp.com/push/?mode=admin" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/jquery-object-opacity" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2013年5月22日</span>
+				<span class="create">创建:2013年5月22日</span>
+			</div>
+			<figcaption>
+				<h2>jQuery-Object-Opacity</h2>
+				<p>A jQuery plugin that changes element(s) opacity, support delegate in javascript. </p>
+				<a href="https://github.com/soulteary/jQuery-Object-Opacity" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				<a href="http://soulteary.github.io/jQuery-Object-Opacity/" target="_blank">Read More</a>
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/firephp-for-chrome-sae" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2012年11月27日</span>
+				<span class="create">创建:2012年11月27日</span>
+			</div>
+			<figcaption>
+				<h2>firephp-for-chrome-sae</h2>
+				<p>FirePhp For Chrome</p>
+				<a href="https://github.com/soulteary/firephp-for-chrome-sae" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+		<figure class="project">
+			<div class="preview">
+				<img src="projects/soulteary/sublime-preview-me" alt="" onerror="this.src='placeholder.jpg'" />
+			</div>
+			<div class="date">
+				<span class="update">更新:2012年9月17日</span>
+				<span class="create">创建:2012年9月17日</span>
+			</div>
+			<figcaption>
+				<h2>sublime-preview-me</h2>
+				<p>preview current content use browser. / sublime text 2 浏览器中预览改进版本。</p>
+				<a href="https://github.com/soulteary/sublime-preview-me" target="_blank" rel="noreferrer nofollow">GitHub</a>
+				
+			</figcaption>
+		</figure>
+    </div>
+  </body>
+</html>
