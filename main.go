@@ -78,8 +78,8 @@ func makeTemplate(projects []Project) {
 				<span class="create">创建:` + project.CreatedAt.Format("2006年1月2日") + `</span>
 			</div>
 			<figcaption>
-				<h2>` + shim.Cn.Name + `</h2>
-				<p>` + shim.Cn.Description + `</p>
+				<h2 data-lang-en="` + shim.En.Name + `">` + shim.Cn.Name + `</h2>
+				<p data-lang-en="` + shim.En.Description + `">` + shim.Cn.Description + `</p>
 				<a href="` + project.URL + `" target="_blank" rel="noreferrer nofollow">GitHub</a>
 				<a href="` + project.Homepage + `" target="_blank">Read More</a>
 			</figcaption>
