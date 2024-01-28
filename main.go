@@ -7,6 +7,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"slices"
 	"sort"
 	"strings"
 	"time"
@@ -84,6 +85,10 @@ func mergeProjectData() (allProjects []Project) {
 	if err != nil {
 		panic(err)
 	}
+
+	ignoreList := getIgnoreList()
+	forks := getForks()
+
 	for _, file := range files {
 		buf, err := os.ReadFile(fmt.Sprintf("cache/%s", file.Name()))
 		if err != nil {
@@ -94,14 +99,33 @@ func mergeProjectData() (allProjects []Project) {
 
 		for pId := range projects {
 			if !projects[pId].Private {
-				if !projects[pId].Fork {
-					allProjects = append(allProjects, projects[pId])
+				if slices.Contains(forks, projects[pId].Name) || !projects[pId].Fork {
+					if !slices.Contains(ignoreList, projects[pId].Name) {
+						allProjects = append(allProjects, projects[pId])
+					}
 				}
 			}
 		}
 	}
-
 	return allProjects
+}
+
+func getForks() (forks []string) {
+	buf, err := os.ReadFile("forks.json")
+	if err != nil {
+		panic(err)
+	}
+	json.Unmarshal(buf, &forks)
+	return forks
+}
+
+func getIgnoreList() (ignoreList []string) {
+	buf, err := os.ReadFile("ignore.json")
+	if err != nil {
+		panic(err)
+	}
+	json.Unmarshal(buf, &ignoreList)
+	return ignoreList
 }
 
 func fetchWithCache(token string, maxPage int) {
