@@ -1,0 +1,10 @@
+{
+  "en": {
+    "name": "Ubuntu Remote Control Helper",
+    "description": "Make Ubuntu Native Remote Control Easy to use and Reliable."
+  },
+  "cn": {
+    "name": "Ubuntu 远程控制助手",
+    "description": "让 Ubuntu 原生的远程控制（远程桌面）功能稳定可靠。"
+  }
+}

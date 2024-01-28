@@ -1,0 +1,10 @@
+{
+  "en": {
+    "name": "Stable Diffusion web UI",
+    "description": "More Stable, Dockerize, Stable Diffusion Web UI."
+  },
+  "cn": {
+    "name": "Stable Diffusion web UI",
+    "description": "更稳定、Dockerize、稳定的 Diffusion Web UI。"
+  }
+}

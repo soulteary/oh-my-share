@@ -1,0 +1,10 @@
+{
+  "en": {
+    "name": "Docker Stable Diffusion WebUI",
+    "description": "Goal: Reliable, production-ready tools that can be used right out of the box."
+  },
+  "cn": {
+    "name": "Docker Stable Diffusion WebUI",
+    "description": "目标：可信赖，开箱即用的生产就绪的工具。"
+  }
+}
