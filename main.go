@@ -111,7 +111,7 @@ func mergeProjectData() (allProjects []Project) {
 }
 
 func getForks() (forks []string) {
-	buf, err := os.ReadFile("forks.json")
+	buf, err := os.ReadFile("config/forks.json")
 	if err != nil {
 		panic(err)
 	}
@@ -120,7 +120,7 @@ func getForks() (forks []string) {
 }
 
 func getIgnoreList() (ignoreList []string) {
-	buf, err := os.ReadFile("ignore.json")
+	buf, err := os.ReadFile("config/ignore.json")
 	if err != nil {
 		panic(err)
 	}
